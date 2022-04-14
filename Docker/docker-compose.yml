@@ -1,0 +1,261 @@
+version: "3.5"
+services:
+  #-----------------------------------------------------------------------------------------
+  # Ghi chú: 
+  #  - Mỗi khi chạy lại docker, phải khởi chạy apache2 
+  #
+  httpgateway:
+    container_name: httpgateway
+    hostname: httpgateway
+    tty: true
+    restart: always
+    build:
+      # Tao image luon trong docker compose
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-httpgateway # File docker
+      args:
+        - buildno=1
+    # command: "service apache2 start && touch ./stop && tail -f ./stop "       
+    volumes:
+      - "/home/httpgateway_dummy/www/:/var/www/"
+      - "/home/httpgateway_dummy/logs:/var/log/apache2"
+      - "/home/httpgateway_dummy/certs:/etc/apache2/certs"
+      - "/home/httpgateway_dummy/sites-enabled:/etc/apache2/sites-enabled"
+    ports:
+      - "25322:22"
+      - 80:80
+      - 70:70
+      - 90:90
+      - 443:443
+    networks:
+      official:
+        ipv4_address: 192.168.51.253
+
+  #-------------------------------------------------------------------------------
+  mysql:
+    # docker-compose up -d mysql   / Phai tao them tai khoan
+    image: mysql:8 #  đã ghi nhận  không tương thích với mysql:latest với lỗi mysqld: Can't open file: 'mysql.ibd' (errno: 0 - )
+    container_name: mysql
+    hostname: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=92a87b47d5c47ccbb5592cde3a207dd3
+    volumes:
+      - "/home/mysql_dummy/opt/MySQLData:/var/lib/mysql"
+      #- "/home/mysql_dummy/etc/mysql:/etc/mysql"
+    ports:
+      - "3306:3306"
+      - "33060:33060"
+    networks:
+      official:
+        ipv4_address: 192.168.51.2
+  #-----------------------------------------------------------------------------------------                 
+  mongo:
+    # docker-compose up -d MONGO
+    image: mongo
+    container_name: mongo
+    hostname: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 92a87b47d5c47ccbb5592cde3a207dd3
+    command: "mongod --auth --port 27017 --bind_ip_all"
+    volumes:
+      - "/home/mongo_dummy:/data"
+    ports:
+      - "27017:27017"
+    networks:
+      official:
+        ipv4_address: 192.168.51.3
+  #-----------------------------------------------------------------------------------------                 
+  postgres:
+    # docker-compose up -d postgres
+    image: postgres
+    container_name: postgres
+    hostname: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 92a87b47d5c47ccbb5592cde3a207dd3 #  for account name: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - "/home/postgre_dummy/data:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
+    networks:
+      official:
+        ipv4_address: 192.168.51.4
+
+  #-----------------------------------------------------------------------------------------     
+  innovation-hackathon:
+    container_name: innovation-hackathon
+    hostname: innovation-hackathon
+    tty: true
+    build:
+      # build: # Yeu cau docker compose trieu goi den docker file de tao may ao
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-httpd # File docker
+      args:
+        - buildno=1
+    restart: always
+    volumes:
+      - "/home/innovation_hackathon_dummy/html:/var/www/html" # Phải có file index.js ở thư mục này
+      - "/home/innovation_hackathon_dummy/root:/root"
+      - "/home/innovation_hackathon_dummy/home:/home"
+    ports:
+      - "38022:22" # Số hiệu port < 60 thì phải để dạng string
+      - "38070:70"
+      - "38080:80"
+      - "38090:90"
+    networks:
+      official:
+        ipv4_address: 192.168.51.38
+  #-----------------------------------------------------------------------------------------   
+  tuandat:
+    container_name: tuandat
+    hostname: tuandat
+    tty: true
+    build:
+      # Tao image luon trong docker compose
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-node # File docker
+      args:
+        - buildno=1
+    restart: always
+    volumes:
+      - "/home/tuandat_dummy/html:/var/www/html" # Phải có file index.js ở thư mục này
+      - "/home/tuandat_dummy/root:/root"
+      - "/home/tuandat_dummy/home:/home"
+    ports:
+      - "36022:22" # Số hiệu port < 60 thì phải để dạng string
+      - "36070:70"
+      - "36080:80"
+      - "36090:90"
+    networks:
+      official:
+        ipv4_address: 192.168.51.36
+
+  #-----------------------------------------------------------------------------------------        
+
+  #-----------------------------------------------------------------------------------------  
+  backup_storage:
+    #website chứa landingpage của các dự án: 
+    container_name: backup_storage
+    hostname: backup_storage
+    tty: true
+    build:
+      # build: # Yeu cau docker compose trieu goi den docker file de tao may ao
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-httpd-vsftp # File docker
+      args:
+        - buildno=1
+    working_dir: /usr/local/apache2/htdocs
+    restart: always
+    volumes:
+      - "/home/backup_storage_dummy/:/usr/local/apache2/htdocs" # May ao docker se co thu muc var/www, thu muc nay se dc anh xa vao may vat ly o thu mucc homw/flow_dummy
+    ports:
+      - "34022:22" # Số hiệu port < 60 thì phải để dạng string
+      - "34080:80"
+    networks:
+      official:
+        ipv4_address: 192.168.51.34
+  #-----------------------------------------------------------------------------------------  
+  #-----------------------------------------------------------------------------------------                 
+  autoemail:
+    #website cai dat dich vu AutoEmail cua nhom Tran Minh Tuan, 
+    container_name: autoemail
+    hostname: autoemail
+    tty: true
+    build:
+      # build: # Yeu cau docker compose trieu goi den docker file de tao may ao
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-phpmysqli # File docker
+      args:
+        - buildno=1
+    working_dir: /var/www/html
+    restart: always
+    volumes:
+      - "/home/autoemail_dummy:/var/www/html" # May ao docker se co thu muc var/www, thu muc nay se dc anh xa vao may vat ly o thu mucc homw/flow_dummy
+    ports:
+      - "25080:80" # cong cho dich vu web
+      - "25021:21" # cong cho dich vu ftp  #ftp://landingpage.techlinkvn.com:23021
+      - "25022:22" # ssh
+    networks:
+      official:
+        ipv4_address: 192.168.51.25
+  #-----------------------------------------------------------------------------------------                 
+  file_server:
+    # Đang sử dụng cho nhóm thu thâp dữ liệu camera để đẩy ảnh SV về kho. Tran Viet Anh
+    container_name: file_server
+    hostname: file_server
+    tty: true
+    build:
+      # Tao image luon trong docker compose
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-node # File docker
+      args:
+        - buildno=1
+    restart: always
+    volumes:
+      - "/home/opt/customerwarehouse:/root"
+    ports:
+      - "26022:22" # Số hiệu port < 60 thì phải để dạng string
+      - "26080:80"
+    networks:
+      official:
+        ipv4_address: 192.168.51.26
+  #-----------------------------------------------------------------------------------------                             
+  # Ghi chú: 
+  #  - Mỗi khi chạy lại docker, phải khởi chạy apache2. 
+  hackathon:
+    #Các landingpage cho cuộc thi Hackathon của SOICT. hackathon.soict.ai
+    container_name: hackathon
+    hostname: hackathon
+    tty: true
+    build:
+      # build: # Yeu cau docker compose trieu goi den docker file de tao may ao
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-httpd # File docker
+      args:
+        - buildno=1
+    working_dir: /usr/local/apache2/htdocs
+    restart: always
+    volumes:
+      - "/home/hackathon_dummy/htdocs:/usr/local/apache2/htdocs"
+      - "/home/hackathon_dummy/home:/home"
+    ports:
+      - "27080:80" # cong cho dich vu web
+      - "27022:22" # ssh
+    networks:
+      official:
+        ipv4_address: 192.168.51.27
+
+  #-----------------------------------------------------------------------------------------    
+  dungct:
+    #website chứa landingpage của các dự án: 
+    container_name: dungct
+    hostname: dungct
+    tty: true
+    build:
+      # build: # Yeu cau docker compose trieu goi den docker file de tao may ao
+      context: ./ # Thư mục chứa Docker file là thư mục hiện thời
+      dockerfile: dockerfile-httpd-vsftp # File docker
+      args:
+        - buildno=1
+    working_dir: /usr/local/apache2/htdocs
+    restart: always
+    volumes:
+      - "/home/dungct_dummy/:/usr/local/apache2/htdocs" # May ao docker se co thu muc var/www, thu muc nay se dc anh xa vao may vat ly o thu mucc homw/flow_dummy
+    ports:
+      - "33022:22" # Số hiệu port < 60 thì phải để dạng string
+      - "33080:80"
+    networks:
+      official:
+        ipv4_address: 192.168.51.33
+#-----------------------------------------------------------------------------------------           
+networks:
+  official:
+    # Tên mạng tương ứng khi dùng docker network ls  là tiennd_official
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.51.0/24
