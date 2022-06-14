@@ -1,0 +1,9 @@
+Mô tả: Cổng thông tin mới với đầy đủ chức năng, tin tức và thông tin về CLB, các project cũng như các thành viên trong CLB
+Keyword: Web, ReactJS, Tailwind CSS, NodeJS, SQL
+Thông tin thành viên: 
++ Trần Xuân Hương: https://www.facebook.com/TXHuong.HUST/
++ Phạm Ngọc Long: https://www.facebook.com/profile.php?id=100004910085439
++ Trần Vân Ngọc: https://www.facebook.com/profile.php?id=100005620727906
++ Phạm Quốc Huy: https://www.facebook.com/profile.php?id=100007306336096
+Link gitHub: https://github.com/SOICTInnovationClub/sinno.soict.ai
+link web:http://49.12.213.105:4000/
