@@ -5,7 +5,7 @@ Công nghệ luôn thay đổi. Để đón đầu xu thế của giới công n
 về khoa học và công nghệ từ nhiều trang web khác nhau. Mỗi bài viết đều được tóm tắt và trích xuất từ khóa, giúp người dùng tiếp nhận 
 thông tin nhanh chóng và tiết kiệm thời gian.
 
-2.	Kiến thức liên quan
+2.	Công nghệ liên quan
 
 Dự án liên quan đến : Việc trích xuất dữ liệu từ các web và mảng xử lý ngôn ngữ tự nhiên (natural language processing) trong AI.
 •	Web Scraping : sử dụng framework Selenium, thư viện beautifulsoup, newspaper trong python để trích xuất dữ liệu từ các bài báo 
