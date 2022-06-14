@@ -2,7 +2,7 @@
 1.	Mô tả sơ lược
 
 Công nghệ luôn thay đổi. Để đón đầu xu thế của giới công nghệ, chúng tôi tạo ra một trang web có thể tự động cập nhật các bài báo
-về khoa học và công nghệ từ nhiều trang web khác nhau. Mỗi bài viết đều được tổng hợp và trích xuất từ khóa, giúp người dùng tiếp nhận 
+về khoa học và công nghệ từ nhiều trang web khác nhau. Mỗi bài viết đều được tóm tắt và trích xuất từ khóa, giúp người dùng tiếp nhận 
 thông tin nhanh chóng và tiết kiệm thời gian.
 
 2.	Kiến thức liên quan
