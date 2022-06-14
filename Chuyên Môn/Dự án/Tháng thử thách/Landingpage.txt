@@ -1,5 +1,15 @@
-Mô tả: Cổng thông tin mới với đầy đủ chức năng, tin tức và thông tin về CLB, các project cũng như các thành viên trong CLB
-Keyword: Web, ReactJS, Tailwind CSS, NodeJS, SQL
+Mô tả sơ lược:
+Landing page là một trang web rất là quan trọng đối với câu lạc bộ, nó hiện thị tất cả thông tin của CLB như các project, dự án của CLB, các thành viên tiêu biểu, các cuộc thi, tin tức về CLB ..v.v 
+Đây là trang web hiện thị cho tất cả mọi người kể cả những thành viên không phải của CLB.
+Project lần này sẽ là bước đầu cho việc dựng lại một cổng thông tin mới với đầy đủ chức năng cho cả thành viên và các trưởng ban, ban quản lý của CLB.
+
+Keyword: 
++ Web: Tập hợp các trang thông tin được lưu trữ trên máy chủ và có thể truy cập từ xa thông qua mạng internet
++ ReactJS: là một thư viện Javascript được dùng để để xây dựng các tương tác với các thành phần trên website. 
+Một trong những điểm nổi bật nhất của ReactJS đó là việc render dữ liệu không chỉ thực hiện được trên tầng Server mà còn ở dưới Client nữa.
++ Tailwind CSS: là một utility-first CSS framework, có nhiều các class bao gồm các thuộc tính CSS khác nhau và quan trọng, chúng ta có thể dễ dàng mở rộng tạo mới ra những class bằng chính những class của nó.
++ NodeJS: là một nền tảng JavaScript cực kì mạnh mẽ được sử dụng để phát triển ác ứng dụng chat online
+
 Thông tin thành viên: 
 + Trần Xuân Hương: https://www.facebook.com/TXHuong.HUST/
 + Phạm Ngọc Long: https://www.facebook.com/profile.php?id=100004910085439
