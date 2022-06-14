@@ -1,12 +1,26 @@
 
 1.	Mô tả sơ lược
 
-Công nghệ luôn thay đổi. Để đón đầu xu thế của giới công nghệ, chúng tôi tạo ra một trang web có thể tự động
-cập nhật các bài báo về khoa học và công nghệ từ nhiều trang web khác nhau. Mỗi bài viết đều được tổng hợp và 
-trích xuất từ khóa, giúp người dùng tiếp nhận thông tin nhanh chóng và tiết kiệm thời gian.
+Công nghệ luôn thay đổi. Để đón đầu xu thế của giới công nghệ, chúng tôi tạo ra một trang web có thể tự động cập nhật các bài báo về khoa học và công nghệ từ nhiều trang web khác nhau. Mỗi bài viết đều được tổng hợp và trích xuất từ khóa, giúp người dùng tiếp nhận thông tin nhanh chóng và tiết kiệm thời gian.
 
 2.	Kiến thức liên quan
 
 Dự án liên quan đến : Việc trích xuất dữ liệu từ các web và mảng xử lý ngôn ngữ tự nhiên (natural language processing) trong AI.
-•	Web Scraping : sử dụng framework Selenium, thư viện beautifulsoup, newspaper trong python để trích xuất dữ liệu từ các bài báo 
-A
+•	Web Scraping : sử dụng framework Selenium, thư viện beautifulsoup, newspaper trong python để trích xuất dữ liệu từ các bài báo của nhiều trang web khác nhau
+•	Natural language processing : 
+-	Text summarization : dùng thư viện sumy để tóm tắt nội dung các bài báo đã trích xuất 
+-	Keyword extraction : dùng thư viện KeyBERT để trích xuất từ khóa của các bài báo
+•	Web programming : Dùng html và css để lập trình web
+
+3.	Thành viên trong dự án
+
+• Ngô Thị Thu Huyền - link fb : https://www.facebook.com/huyen.luna.040302/
+• Phạm Tiến Sơn – link fb : https://www.facebook.com/phamson.02
+• Phạm Ngọc Quân – link fb: https://www.facebook.com/ngocquanofficial
+• Phạm Quang Nghĩa – link fb: https://www.facebook.com/nghia.phamquang.330
+
+4.	Thông tin về dự án
+
+• Link trang web của dự án : http://103.3.60.235/
+• Link github của dự án : https://github.com/SOICTInnovationClub/SINNO-AI-CrawlingBot
+
