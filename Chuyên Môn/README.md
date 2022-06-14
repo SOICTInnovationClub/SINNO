@@ -8,7 +8,7 @@
   7. Phạm Ngọc Quân: ngocquanofficial@gmail.com
   8. Phùng Tiến Đạt: pdathp14@gmail.com
   9. Nguyễn Tống Minh: nguyentongminh02@gmail.com
-  10. Ngô Thị Thu Huyền: huyenthu432002@gmail.com
+  10. Ngô Thị Thu Huyền: huyen.ntt200289@sis.hust.edu.vn
   11. Phạm Tiến Sơn: phamtienson02@gmail.com
   12. Phạm Quang Nghĩa: quangnghia.ns@gmail.com
   13. Kha Minh Bảo: khaminhbao17082003@gmail.com
