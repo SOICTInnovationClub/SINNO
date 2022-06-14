@@ -12,6 +12,6 @@
   11. Phạm Tiến Sơn: phamtienson02@gmail.com
   12. Phạm Quang Nghĩa: quangnghia.ns@gmail.com
   13. Kha Minh Bảo: khaminhbao17082003@gmail.com
-  14. Phạm Huy Hà Thái: phamhuyhathai@gmail.com
+  14. Phạm Huy Hà Thái: thai.phh204784@sis.hust.edu.vn
   15. Trương Đăng Biển: bien030302@gmaill.com
   16. Trần Minh Hiếu: tuntotovl166@gmail.com
