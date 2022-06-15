@@ -1,5 +1,5 @@
 # Thành viên ban Chuyên Môn 
-  1. Nguyễn Đình Bắc: ndinhbac.0@gmail.com	
+  1. Nguyễn Đình Bắc: bac.nd210084@sis.hust.edu.com	
   2. Nguyễn Thanh Hà: nguyenthanhha120103@gmail.com
   3. Trần Văn Cường: cuong.tv200078@sis.hust.edu.vn
   4. Nguyễn Ngọc Dũng: dungnasa10@gmail.com
