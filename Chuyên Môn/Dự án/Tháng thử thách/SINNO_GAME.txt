@@ -1,9 +1,11 @@
 1> Mô tả sơ lược : 
+Lấy cảm hứng từ tuyệt tác điện ảnh Star Wars từ những năm 70s' cũng như tập truyện tranh nổi tiếng "Doraemon : Nobita và cuộc chiến vũ trụ" , game sẽ đưa bạn đến một thế giới của thực tại song song nơi những người chơi phải đánh bại những thế lực hắc ám ngay trong chính căn phòng của mình 
+Gameplay : Nhiệm vụ của bạn là phải di chuyển xung quanh ngôi nhà của mình để tiêu diệt các phi thuyền của kẻ thù bằng các vũ khí tân tiến như đạn ,.. ( tiếp đến có thể là laze hay tên lửa )  
 2> Keyword : 
 + Thể loại AR : 
-Markerless augmented reality/AR không dựa trên điểm đánh dấu
-Thông qua nguồn dữ liệu như gia tốc kế và chức năng theo dõi GPS, loại hình AR này có thể xác định vị trí và đo lường tốc độ. Thiết bị có thể hiển thị đối tượng phù hợp với môi trường của camera. Markerles AR đặc biệt phù hợp với ứng dụng bản đồ, giúp người dùng tìm kiếm địa điểm dễ dàng trong khu vực; hoặc các ứng dụng cần xác định vị trí địa lý của người dùng.
-+Game Engine Unity : Game được xây dựng thông qua Unity , một game engine tương đối phổ biến trong thời điểm hiện nay với những ưu điểm vượt trội như dễ học và làm quen, community rộng , nhiều package và development kit hỗ trợ cùng với hệ thống bài giảng tương đối bài bản được cung cấp bởi website UnityLearn
+  Markerless augmented reality/AR không dựa trên điểm đánh dấu
+  Thông qua nguồn dữ liệu như gia tốc kế và chức năng theo dõi GPS, loại hình AR này có thể xác định vị trí và đo lường tốc độ. Thiết bị có thể hiển thị đối tượng phù     hợp với môi trường của camera. Markerles AR đặc biệt phù hợp với ứng dụng bản đồ, giúp người dùng tìm kiếm địa điểm dễ dàng trong khu vực; hoặc các ứng dụng cần xác     định vị trí địa lý của người dùng.
++ Game Engine Unity : Game được xây dựng thông qua Unity , một game engine tương đối phổ biến trong thời điểm hiện nay với những ưu điểm vượt trội như dễ học và làm       quen, community rộng , nhiều package và development kit hỗ trợ cùng với hệ thống bài giảng tương đối bài bản được cung cấp bởi website UnityLearn
 + Google Cardboard SDK : Development Kit đi kèm , với tính năng tách đôi màn hình điện thoại để khi người chơi đeo VR Headset vào sẽ có trải nghiệm chân thực nhất
 + VR Shinecon Headset : Kính VR được sử dụng bằng cách cài điện thoại của người chơi vào giá đỡ , sau đó đeo lên đầu 
 3> Link liên hệ các thành viên : 
