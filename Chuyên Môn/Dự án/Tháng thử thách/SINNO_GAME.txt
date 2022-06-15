@@ -1,5 +1,6 @@
 1> Mô tả sơ lược : 
-
+2> Keyword : 
+Game Engine Unity , Google Cardboard SDK , VR Shinecon Headset , 
 3> Link liên hệ các thành viên : 
 + Trần Văn Cường : https://www.facebook.com/profile.php?id=100011203692934
 + Trần Minh Hiếu : https://www.facebook.com/profile.php?id=100005638035168
