@@ -7,7 +7,7 @@
   6. Nguyễn Tống Minh: minh.nt204885@sis.hust.edu.vn
   7. Ngô Thị Thu Huyền: huyen.ntt200289@sis.hust.edu.vn
   8. Phạm Tiến Sơn: son.pt204891@sis.hust.edu.vn
-  9. Phạm Quang Nghĩa: quangnghia.ns@gmail.com
+  9. Phạm Quang Nghĩa: nghia.pq200436@sis.hust.edu.vn
   10. Kha Minh Bảo: khaminhbao17082003@gmail.com
   11. Phạm Huy Hà Thái: thai.phh204784@sis.hust.edu.vn
   12. Trần Minh Hiếu: tuntotovl166@gmail.com
