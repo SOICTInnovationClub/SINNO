@@ -2,7 +2,7 @@
   1. Nguyễn Đình Bắc: bac.nd210084@sis.hust.edu.vn	
   2. Nguyễn Thanh Hà: ha.nt210298@sis.hust.edu.vn
   3. Trần Văn Cường: cuong.tv200078@sis.hust.edu.vn
-  4. Phạm Ngọc Quân: ngocquanofficial@gmail.com
+  4. Phạm Ngọc Quân: quan.pn210704@sis.hust.edu.vn
   5. Phùng Tiến Đạt: dat.pt210163@sis.hust.edu.vn
   6. Nguyễn Tống Minh: minh.nt204885@sis.hust.edu.vn
   7. Ngô Thị Thu Huyền: huyen.ntt200289@sis.hust.edu.vn
