@@ -11,3 +11,5 @@
   10. Kha Minh Bảo: Bao.KM210098@sis.hust.edu.vn
   11. Phạm Huy Hà Thái: thai.phh204784@sis.hust.edu.vn
   12. Trần Minh Hiếu: tuntotovl166@gmail.com
+
+  14. Phạm Ngọc Long: phamngoclong3005@gmail.com
