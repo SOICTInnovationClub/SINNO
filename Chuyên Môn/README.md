@@ -12,4 +12,5 @@
   11. Phạm Huy Hà Thái: thai.phh204784@sis.hust.edu.vn
   12. Trần Minh Hiếu: tuntotovl166@gmail.com
   13. Nobody
-  14. Phạm Ngọc Long: phamngoclong3005@gmail.com
+  14. Phạm Ngọc Long: phamngoclong3005@gmail.com  
+  15. Trần Vân Ngọc: ngoc.tv200443@sis.hust.edu.vn
